@@ -1,0 +1,124 @@
+doctype HTML
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE-edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    meta(name="theme-color" content="#870042")
+    title Stiiliraamat | ITÜK
+    link(rel="stylesheet" href="assets/css/master.css")
+html
+    body
+        #main
+            img.logo(src="assets/img/logo-navbar.svg")
+            .block
+                h1.title TTÜ IT-teaduskonna üliõpilaskogu stiiliraamat
+                p.small.muted versioon 0.1-SNAPSHOT, viimati uuendatud 30. august 2017
+                p
+                    | #[strong ITÜK] on Tallinna Tehnikaülikooli infotehnoloogia teaduskonna üliõpilaskogu.
+                    |  Seetõttu järgime väga suures osas TTÜ stiiliraamatut.
+                a(href="#contact") Kontakt
+            .block
+                h2 Nimi ja lühendamine.
+                p
+                    | Kui ITÜKi nime kasutatakse kontekstis, kus arvestatav osa lugejatest ei tea mida ITÜK tähendab,
+                    |  siis palume kirjutada välja ITÜKi nimi (nt. TTÜ IT-teaduskonna üliõpilaskogu).
+                p
+                    | Nime võib kirjuta nii Tallinna Tehnikaülikooli eesliitega täis pikalt, ilma eesliiteta ja lühendina.
+                    | Lubatud kirjutamise viisid on:
+                ul
+                    li Tallinna Tehnikaülikooli IT-teaduskonna üliõpilaskogu
+                    li TTÜ IT-teaduskonna üliõpilaskogu
+                    li ITÜK
+                p
+                    | Lubatud, kuid mitte-eelistatud viisid:
+                ul
+                    li Tallinna Tehnikaülikooli infotehnoloogia teaduskonna üliõpilaskogu
+                    li TTÜ infotehnoloogia teaduskonna üliõpilaskogu
+                p
+                    | Jälgi suure- ja väikese algustähe õigekirja! ITÜKi nime valesti kirjutamine ei ole lubatud!
+                    | ITÜK lühendi käänamisel lühendi lõppu sidekriipsu ei lisata, näiteks (ITÜKi, ITÜKile).
+            .block
+                h2 Logo
+                p
+                    | Siit saad alla laadida kõik versioonid logost. Palun väldi rastergraafika kasutamist.
+                    | Veebis kasutamiseks on olemas SVG versioonid ja trükiks PDF versioonid.
+                    | Palun väldi ka SVG kasutamist trükis ja PDF kasutamist veebis, sest need on vastavalt RGB ja CMYK
+                    | värviruumides, mis pole otseselt teisendatavad.
+                a.button(href="files/ituk.logo.pack.zip") Laadi alla logopakk
+
+                h3 Logo kasutamine koos TTÜ logoga või ilma TTÜ logota
+                p
+                    | TTÜ siseselt kasutatakse ITÜKi logot ilma TTÜ logota,
+                    | et vältida ühe ja sama logo kordumist ürituste jms postritel, reklaamidel jne.
+                    | Väljaspool TTÜd kasutatakse varianti logost, kus on lisaks ka TTÜ logo.
+
+                h3 Logo variandid
+                p
+                    | Ikooni võib kasutada ainult juhul, kui pikk logo ei jääks loetav, kujunduselemendina või
+                    | juhul, kui on väga lihtne viia ITÜK kokku ikooniga.
+                    | Ikooni võib kasutada nii kastiga kui ilma.
+                h5 Pikk variant TTÜ logoga
+                img(src="assets/img/ituk.horisontal.long.colored.svg")
+                h5 Pikk variant ilma TTÜ logota
+                img(src="assets/img/ituk.horisontal.long.color.nottu.svg")
+                h5 Ikoon
+                img(src="assets/img/ituk.symbol.colored.svg")
+                h5 Ilma kastita ikoon
+                img(src="assets/img/ituk.symbol.negative.purple.svg")
+
+                h3 Logo värvid
+                p Logo värviskeemi valimisel lähtuda järgnevast:
+                ul
+                    li #[strong Värviline logo] - kasutada valgel/väga heledal taustal
+                    li #[strong Must logo] - kasutada valgel/heledal taustal
+                    li #[strong Valge logo] - kasutada värvilisel/tumedal taustal
+                p
+                    | Logol olev tekst PEAB vastama WCAG AAA standardile. Seda saad kontrollida
+                    |  #[a(href="http://webaim.org/resources/contrastchecker/") siin]
+                    |.
+
+                h3 Kaitstud ala
+                p
+                    | Igal logol on kaitstud ala igast logo neljast küljest ">_" märgi "_" laiune.
+                    | Pikal logol on kaitstud ala näiteks selline:
+                img(src="assets/img/protected.svg")
+                p
+                    | Kaitstud alasse ei ole lubatud muid elemente paigutada.
+
+            .block
+                h2 Värvid
+                h5 Põhivärvid
+                .row.auto
+                    .col(style="background-color: #870042; color: #fff")
+                        .color-spec
+                            p HEX: #870042
+                            p RGB: 135, 0, 66
+                            p CMYK: 9, 100, 24, 38
+                    .col(style="background-color: #4c4c4e; color: #fff")
+                        .color-spec
+                            p HEX: #4c4c4e
+                            p RGB: 76, 76, 78
+                            p CMYK: 0, 0, 0, 70
+                    .col(style="background-color: #000000; color: #fff")
+                        .color-spec
+                            p HEX: #00000000
+                            p RGB: 0, 0, 0
+                            p CMYK: 0, 0, 0, 100
+                    .col(style="background-color: #ffffff; color: #000000")
+                        .color-spec
+                            p HEX: #ffffff
+                            p RGB: 255, 255, 255
+                            p CMYK: 0, 0, 0, 0
+            .block
+                h2 Tüpograafia
+                h5 Veebifont
+                p ITÜK kasutab fonti #[a(href="https://fonts.google.com/specimen/Raleway") Raleway].
+                h5 Logol olev font
+                p ITÜKi logol on kasutatud fonti nimega PF Centro Sans.
+
+            .block#contact
+                h2 Kontakt
+                p
+                    | Kõikide küsimustega ITÜKi identiteedi suhtes saata meil
+                    |  #[a(href="mailto:kontakt@ituk.ee") kontakt@ituk.ee].
+                p Palume mitte ise olla loomingulised, igasuguste küsimuste korral pöörduda ITÜKi poole.
