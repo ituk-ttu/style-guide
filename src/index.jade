@@ -1,3 +1,12 @@
+-function prettyDate(){
+    -var date = new Date();
+    -var d = date.getDate();
+    -var monthNames = [ "jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli", "august", "september", "octoober", "november", "detsember" ];
+    -var m = monthNames[date.getMonth()];
+    -var y = date.getFullYear();
+    -return d + '. ' + m + ' ' + y;
+-}
+
 doctype HTML
 head
     meta(charset="UTF-8")
@@ -12,7 +21,7 @@ html
             img.logo(src="assets/img/logo-navbar.svg")
             .block
                 h1.title TTÜ IT-teaduskonna üliõpilaskogu stiiliraamat
-                p.small.muted versioon 1.0, viimati uuendatud 21. november 2017
+                p.small.muted viimati uuendatud #{ prettyDate() }
                 p
                     | #[strong ITÜK] on Tallinna Tehnikaülikooli infotehnoloogia teaduskonna üliõpilaskogu.
                     |  Seetõttu järgime väga suures osas TTÜ stiiliraamatut.
@@ -28,6 +37,7 @@ html
                 ul
                     li Tallinna Tehnikaülikooli IT-teaduskonna üliõpilaskogu
                     li TTÜ IT-teaduskonna üliõpilaskogu
+                    li IT-teaduskonna üliõpilaskogu
                     li ITÜK
                 p
                     | Lubatud, kuid mitte-eelistatud viisid:
@@ -61,6 +71,8 @@ html
                 img(src="assets/img/ituk.horisontal.long.colored.svg")
                 h5 Pikk variant ilma TTÜ logota
                 img(src="assets/img/ituk.horisontal.long.color.nottu.svg")
+                h5 Logotype
+                img(src="assets/img/ituk.logotype.colored.svg")
                 h5 Ikoon
                 img(src="assets/img/ituk.symbol.colored.svg")
                 h5 Ilma kastita ikoon
@@ -114,7 +126,7 @@ html
                 h5 Veebifont
                 p ITÜK kasutab fonti #[a(href="https://fonts.google.com/specimen/Raleway") Raleway].
                 h5 Logol olev font
-                p ITÜKi logol on kasutatud fonti nimega PF Centro Sans.
+                p ITÜKi logol (v.a. logotype-il) on kasutatud fonti nimega PF Centro Sans.
 
             .block#contact
                 h2 Kontakt
