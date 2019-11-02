@@ -6,7 +6,9 @@ addons:
 sudo: true
 dist: trusty
 node_js: "stable"
-install: npm install && npm install gulp@3.9.1
+before_install:
+  - npm install -g gulp@3.9.1
+install: npm install
 branches:
   only:
     - master
