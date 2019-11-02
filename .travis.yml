@@ -1,0 +1,15 @@
+addons:
+  apt:
+    packages:
+      - rsync
+      - sshpass
+sudo: true
+dist: trusty
+node_js: "stable"
+install: npm install && npm install gulp@3.9.1
+branches:
+  only:
+    - master
+script: gulp compile
+after_success:
+  - test $TRAVIS_BRANCH = "master" && rsync -chavzP --rsh="sshpass -p $SSH_PASSWORD ssh -o StrictHostKeyChecking=no -l $SSH_USERNAME" build/* $SSH_USERNAME@ituk.ee:/var/www/style/build
